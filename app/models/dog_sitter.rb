@@ -1,4 +1,4 @@
 class DogSitter < ApplicationRecord
 	has_many :strolls
-	belongs_to 
+	has_many :dogs, through: :strolls 
 end
